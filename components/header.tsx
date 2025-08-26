@@ -33,10 +33,6 @@ export function Header() {
                 className="h-10 w-10 object-contain"
               />
             </div>
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">CardioCentro Cuenca</h1>
-              <p className="text-sm text-gray-600">Cardiología</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
