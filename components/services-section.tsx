@@ -6,7 +6,7 @@ export function ServicesSection() {
   const services = [
     {
       icon: Zap,
-      title: "Electrofisiología Cardiaca y Arritmias",
+      title: "Arritmias y Marcapasos",
       description:
         "Evaluación y tratamiento avanzado de arritmias como taquicardias, fibrilación auricular, bloqueos y síncope.",
       features: ["Implante de marcapasos", "Seguimiento clínico", "Estudios no invasivos", "Ajustes de dispositivos"],
