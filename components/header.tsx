@@ -2,8 +2,9 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Heart } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -23,8 +24,14 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-2 rounded-lg">
-              <Heart className="h-6 w-6 text-white" />
+            <div className="p-1 rounded-lg">
+              <Image 
+                src="/logo.png" 
+                alt="CardioCentro Cuenca Logo" 
+                width={40} 
+                height={40} 
+                className="h-10 w-10 object-contain"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">CardioCentro Cuenca</h1>
