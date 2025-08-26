@@ -28,8 +28,8 @@ export function Header() {
               <Image 
                 src="/logo.png" 
                 alt="CardioCentro Cuenca Logo" 
-                width={40} 
-                height={40} 
+                width={400} 
+                height={200} 
                 className="h-10 w-10 object-contain"
               />
             </div>
