@@ -30,7 +30,7 @@ export function Header() {
                 alt="CardioCentro Cuenca Logo" 
                 width={400} 
                 height={200} 
-                className="h-10 w-10 object-contain"
+                className="h-200 w-400 object-contain"
               />
             </div>
           </div>
