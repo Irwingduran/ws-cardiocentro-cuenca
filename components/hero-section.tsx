@@ -4,14 +4,14 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section id="inicio" className="pt-16 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+    <section id="inicio" className="pt-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Cuidado Integral del
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+                <span className="text-brand-magenta">
                   {" "}
                   Corazón
                 </span>
@@ -26,14 +26,14 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+                className="bg-brand-magenta hover:bg-brand-magenta-dark text-white"
                 asChild
               >
                 <a href="https://wa.me/593989898747?text=Hola,%20me%20gustaría%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer">
                   Agendar Consulta
                 </a>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" className="border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white" asChild>
                 <a href="#servicios">
                   Conocer Servicios
                 </a>
@@ -42,26 +42,26 @@ export function HeroSection() {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
               <div className="text-center">
-                <div className="bg-blue-100 p-3 rounded-full w-fit mx-auto mb-2">
-                  <Heart className="h-6 w-6 text-blue-600" />
+                <div className="bg-brand-magenta/10 p-3 rounded-full w-fit mx-auto mb-2">
+                  <Heart className="h-6 w-6 text-brand-magenta" />
                 </div>
                 <p className="text-sm font-medium text-gray-900">Cardiología Clínica</p>
               </div>
               <div className="text-center">
-                <div className="bg-cyan-100 p-3 rounded-full w-fit mx-auto mb-2">
-                  <Shield className="h-6 w-6 text-cyan-600" />
+                <div className="bg-brand-purple/10 p-3 rounded-full w-fit mx-auto mb-2">
+                  <Shield className="h-6 w-6 text-brand-purple" />
                 </div>
                 <p className="text-sm font-medium text-gray-900">Electrofisiología</p>
               </div>
               <div className="text-center">
-                <div className="bg-green-100 p-3 rounded-full w-fit mx-auto mb-2">
-                  <Users className="h-6 w-6 text-green-600" />
+                <div className="bg-brand-magenta/10 p-3 rounded-full w-fit mx-auto mb-2">
+                  <Users className="h-6 w-6 text-brand-magenta" />
                 </div>
                 <p className="text-sm font-medium text-gray-900">Equipo Multidisciplinario</p>
               </div>
               <div className="text-center">
-                <div className="bg-purple-100 p-3 rounded-full w-fit mx-auto mb-2">
-                  <Award className="h-6 w-6 text-purple-600" />
+                <div className="bg-brand-purple/10 p-3 rounded-full w-fit mx-auto mb-2">
+                  <Award className="h-6 w-6 text-brand-purple" />
                 </div>
                 <p className="text-sm font-medium text-gray-900">Medicina Solidaria</p>
               </div>
@@ -78,8 +78,8 @@ export function HeroSection() {
                 className="rounded-2xl shadow-2xl"
               />
             </div>
-            <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full opacity-20 blur-3xl"></div>
-            <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-20 blur-3xl"></div>
+            <div className="absolute -top-4 -right-4 w-72 h-72 bg-brand-magenta/20 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-brand-purple/20 rounded-full blur-3xl"></div>
           </div>
         </div>
       </div>

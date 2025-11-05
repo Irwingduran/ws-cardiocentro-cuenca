@@ -58,7 +58,7 @@ export function TestimonialsSection() {
     <section id="testimonios" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-green-100 text-green-800 hover:bg-green-100">Testimonios Reales</Badge>
+          <Badge className="mb-4 bg-brand-purple/10 text-brand-purple hover:bg-brand-purple/20">Testimonios Reales</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Lo que Dicen Nuestros Pacientes</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             La confianza de nuestros pacientes es nuestro mayor logro. Conoce las experiencias de quienes han confiado
@@ -72,7 +72,7 @@ export function TestimonialsSection() {
               key={index}
               className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden"
             >
-              <div className="absolute top-4 right-4 text-blue-200">
+              <div className="absolute top-4 right-4 text-brand-purple/20">
                 <Quote className="h-8 w-8" />
               </div>
               <CardContent className="p-6">
@@ -100,17 +100,17 @@ export function TestimonialsSection() {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 text-center">
+        <div className="mt-16 bg-gray-50 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Reconocimiento por Calidad Humana</h3>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">
             Nuestro compromiso va más allá de la medicina. Nos enorgullece el reconocimiento por nuestra calidad humana,
             enfoque ético y atención centrada en el paciente.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">Atención Personalizada</Badge>
-            <Badge className="bg-cyan-100 text-cyan-800 hover:bg-cyan-100">Enfoque Ético</Badge>
-            <Badge className="bg-green-100 text-green-800 hover:bg-green-100">Calidad Humana</Badge>
-            <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-100">Medicina Solidaria</Badge>
+            <Badge className="bg-brand-purple/10 text-brand-purple hover:bg-brand-purple/20">Atención Personalizada</Badge>
+            <Badge className="bg-brand-magenta/10 text-brand-magenta hover:bg-brand-magenta/20">Enfoque Ético</Badge>
+            <Badge className="bg-brand-purple/10 text-brand-purple hover:bg-brand-purple/20">Calidad Humana</Badge>
+            <Badge className="bg-brand-magenta/10 text-brand-magenta hover:bg-brand-magenta/20">Medicina Solidaria</Badge>
           </div>
         </div>
       </div>

@@ -12,25 +12,25 @@ export function ContactSection() {
       icon: MapPin,
       title: "Ubicación",
       details: ["Gonzalo Cordero s/n César Dávila Andrade", "Cuenca, Ecuador"],
-      color: "bg-red-100 text-red-600",
+      color: "bg-brand-magenta/10 text-brand-magenta",
     },
     {
       icon: Phone,
       title: "Teléfono",
       details: ["0989898747"],
-      color: "bg-green-100 text-green-600",
+      color: "bg-brand-purple/10 text-brand-purple",
     },
     {
       icon: Mail,
       title: "Email",
       details: ["cardiocentro.cue@outlook.es"],
-      color: "bg-blue-100 text-blue-600",
+      color: "bg-brand-magenta/10 text-brand-magenta",
     },
     {
       icon: Clock,
       title: "Horarios",
       details: ["Lun - Vie: 8:00 - 18:00", "Sáb: 8:00 - 14:00"],
-      color: "bg-purple-100 text-purple-600",
+      color: "bg-brand-purple/10 text-brand-purple",
     },
   ]
 
@@ -61,7 +61,7 @@ export function ContactSection() {
     <section id="contacto" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-indigo-100 text-indigo-800 hover:bg-indigo-100">Contáctanos</Badge>
+          <Badge className="mb-4 bg-brand-purple/10 text-brand-purple hover:bg-brand-purple/20">Contáctanos</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Estamos Aquí para Ayudarte</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-justify">
             Tu salud cardiovascular es nuestra prioridad. Contáctanos para agendar tu consulta o resolver cualquier duda
@@ -105,7 +105,7 @@ export function ContactSection() {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Servicio de Interés</label>
-                    <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-purple">
                       <option value="">Selecciona un servicio</option>
                       <option value="cardiologia-clinica">Cardiología Clínica</option>
                       <option value="electrofisiologia">Electrofisiología</option>
@@ -131,7 +131,7 @@ export function ContactSection() {
 
                   <Button
                     size="lg"
-                    className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+                    className="w-full bg-brand-magenta hover:bg-brand-magenta-dark text-white"
                   >
                     Enviar Solicitud
                   </Button>
@@ -163,7 +163,7 @@ export function ContactSection() {
             ))}
 
             {/* Quick Services */}
-            <Card className="bg-gradient-to-br from-blue-600 to-cyan-600 text-white">
+            <Card className="bg-brand-purple text-white">
               <CardHeader>
                 <CardTitle className="text-lg">Servicios Rápidos</CardTitle>
               </CardHeader>
@@ -176,7 +176,7 @@ export function ContactSection() {
                       </div>
                       <div>
                         <p className="font-medium text-sm">{service.title}</p>
-                        <p className="text-blue-100 text-xs">{service.description}</p>
+                        <p className="text-white/70 text-xs">{service.description}</p>
                       </div>
                     </div>
                   ))}

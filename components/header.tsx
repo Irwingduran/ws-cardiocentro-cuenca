@@ -41,13 +41,13 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-brand-magenta transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
             ))}
             <Button
-              className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white"
+              className="bg-brand-magenta hover:bg-brand-magenta-dark text-white"
               size="sm"
               asChild
             >
@@ -71,14 +71,14 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                  className="text-gray-700 hover:text-brand-magenta transition-colors duration-200 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
               <Button
-                className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white mt-4"
+                className="bg-brand-magenta hover:bg-brand-magenta-dark text-white mt-4"
                 size="sm"
                 asChild
               >

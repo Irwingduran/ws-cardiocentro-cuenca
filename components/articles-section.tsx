@@ -39,18 +39,18 @@ export function ArticlesSection() {
   ]
 
   const categories = [
-    { name: "Prevención", count: 12, color: "bg-green-100 text-green-800" },
-    { name: "Electrofisiología", count: 8, color: "bg-blue-100 text-blue-800" },
-    { name: "Dispositivos", count: 6, color: "bg-purple-100 text-purple-800" },
-    { name: "Nutrición", count: 10, color: "bg-orange-100 text-orange-800" },
-    { name: "Ejercicio", count: 7, color: "bg-cyan-100 text-cyan-800" },
+    { name: "Prevención", count: 12, color: "bg-brand-magenta/10 text-brand-magenta" },
+    { name: "Electrofisiología", count: 8, color: "bg-brand-purple/10 text-brand-purple" },
+    { name: "Dispositivos", count: 6, color: "bg-brand-magenta/10 text-brand-magenta" },
+    { name: "Nutrición", count: 10, color: "bg-brand-purple/10 text-brand-purple" },
+    { name: "Ejercicio", count: 7, color: "bg-brand-magenta/10 text-brand-magenta" },
   ]
 
   return (
     <section id="articulos" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-orange-100 text-orange-800 hover:bg-orange-100">Educación en Salud</Badge>
+          <Badge className="mb-4 bg-brand-purple/10 text-brand-purple hover:bg-brand-purple/20">Educación en Salud</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Artículos y Recursos</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Mantente informado sobre salud cardiovascular con nuestros artículos especializados, escritos por nuestro
@@ -83,10 +83,10 @@ export function ArticlesSection() {
                           <Badge
                             className={`${
                               article.category === "Prevención"
-                                ? "bg-green-100 text-green-800"
+                                ? "bg-brand-magenta/10 text-brand-magenta"
                                 : article.category === "Electrofisiología"
-                                  ? "bg-blue-100 text-blue-800"
-                                  : "bg-purple-100 text-purple-800"
+                                  ? "bg-brand-purple/10 text-brand-purple"
+                                  : "bg-brand-magenta/10 text-brand-magenta"
                             } hover:bg-current`}
                           >
                             <article.icon className="h-3 w-3 mr-1" />
@@ -108,7 +108,7 @@ export function ArticlesSection() {
                               {article.readTime}
                             </div>
                           </div>
-                          <Button variant="ghost" size="sm" className="text-blue-600 hover:text-blue-700">
+                          <Button variant="ghost" size="sm" className="text-brand-magenta hover:text-brand-magenta-dark">
                             Leer más
                             <ArrowRight className="h-4 w-4 ml-1" />
                           </Button>
@@ -148,12 +148,12 @@ export function ArticlesSection() {
             </Card>
 
             {/* Newsletter */}
-            <Card className="bg-gradient-to-br from-blue-600 to-cyan-600 text-white">
+            <Card className="bg-brand-purple text-white">
               <CardHeader>
                 <CardTitle className="text-lg">Boletín de Salud</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-blue-100 mb-4 text-sm">
+                <p className="text-white/90 mb-4 text-sm">
                   Recibe consejos de salud cardiovascular directamente en tu correo.
                 </p>
                 <div className="space-y-3">
@@ -162,7 +162,7 @@ export function ArticlesSection() {
                     placeholder="Tu correo electrónico"
                     className="w-full px-3 py-2 rounded-lg text-gray-900 text-sm"
                   />
-                  <Button className="w-full bg-white text-blue-600 hover:bg-gray-100">Suscribirse</Button>
+                  <Button className="w-full bg-white text-brand-purple hover:bg-gray-100">Suscribirse</Button>
                 </div>
               </CardContent>
             </Card>
@@ -175,8 +175,8 @@ export function ArticlesSection() {
               <CardContent>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="bg-green-100 p-1 rounded-full mt-1">
-                      <Heart className="h-3 w-3 text-green-600" />
+                    <div className="bg-brand-magenta/10 p-1 rounded-full mt-1">
+                      <Heart className="h-3 w-3 text-brand-magenta" />
                     </div>
                     <div>
                       <p className="text-sm font-medium text-gray-900">Ejercicio Regular</p>
@@ -184,8 +184,8 @@ export function ArticlesSection() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="bg-blue-100 p-1 rounded-full mt-1">
-                      <Shield className="h-3 w-3 text-blue-600" />
+                    <div className="bg-brand-purple/10 p-1 rounded-full mt-1">
+                      <Shield className="h-3 w-3 text-brand-purple" />
                     </div>
                     <div>
                       <p className="text-sm font-medium text-gray-900">Controla tu Presión</p>
@@ -193,8 +193,8 @@ export function ArticlesSection() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 p-1 rounded-full mt-1">
-                      <Activity className="h-3 w-3 text-orange-600" />
+                    <div className="bg-brand-magenta/10 p-1 rounded-full mt-1">
+                      <Activity className="h-3 w-3 text-brand-magenta" />
                     </div>
                     <div>
                       <p className="text-sm font-medium text-gray-900">Dieta Saludable</p>

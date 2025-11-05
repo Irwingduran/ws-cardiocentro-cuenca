@@ -63,7 +63,7 @@ export function ServicesSection() {
     <section id="servicios" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-cyan-100 text-cyan-800 hover:bg-cyan-100">Servicios Especializados</Badge>
+          <Badge className="mb-4 bg-brand-purple/10 text-brand-purple hover:bg-brand-purple/20">Servicios Especializados</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Nuestros Servicios</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto text-justify">
             Ofrecemos atención integral del corazón con tecnología avanzada y un enfoque multidisciplinario para el
@@ -75,7 +75,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <CardHeader>
-                <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-3 rounded-full w-fit mb-4">
+                <div className="bg-brand-magenta p-3 rounded-full w-fit mb-4">
                   <service.icon className="h-6 w-6 text-white" />
                 </div>
                 <CardTitle className="text-xl text-gray-900">{service.title}</CardTitle>
@@ -85,8 +85,8 @@ export function ServicesSection() {
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm text-gray-700">
-                      <div className="bg-green-100 p-1 rounded-full mr-2">
-                        <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      <div className="bg-brand-purple/20 p-1 rounded-full mr-2">
+                        <div className="w-2 h-2 bg-brand-purple rounded-full"></div>
                       </div>
                       {feature}
                     </li>
@@ -107,17 +107,17 @@ export function ServicesSection() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {diagnosticTests.map((test, index) => (
-              <div key={index} className="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
-                <Activity className="h-5 w-5 text-blue-600 flex-shrink-0" />
+              <div key={index} className="flex items-center space-x-3 p-3 bg-brand-purple/10 rounded-lg">
+                <Activity className="h-5 w-5 text-brand-purple flex-shrink-0" />
                 <span className="text-gray-700 text-sm font-medium">{test}</span>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="mt-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 bg-brand-purple rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Precios y Enfoque Solidario</h3>
-          <p className="text-blue-100 mb-6 max-w-3xl mx-auto text-justify">
+          <p className="text-white/90 mb-6 max-w-3xl mx-auto text-justify">
             En CardioCentro Cuenca comprendemos la importancia de garantizar el acceso a la salud cardiovascular con calidad y sensibilidad social.
             Nuestros precios se adaptan a convenios con aseguradoras, empresas y programas institucionales. Contamos con un área de trabajo social
             que evalúa casos clínicos de pacientes con recursos limitados, facilitando el acceso a medicina solidaria como parte fundamental de nuestra misión.
