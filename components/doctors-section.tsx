@@ -185,16 +185,16 @@ export function DoctorsSection() {
                   </div>
                   <div>
                     <DialogTitle className="text-2xl">{selectedDoctor.name}</DialogTitle>
-                    <DialogDescription className="text-lg">
-                      <Badge className={`mt-2 ${specialtyColors[selectedDoctor.specialty] || "bg-gray-100 text-gray-800"}`}>
+                    <div className="mt-2">
+                      <Badge className={specialtyColors[selectedDoctor.specialty] || "bg-gray-100 text-gray-800"}>
                         {selectedDoctor.specialty}
                       </Badge>
                       {selectedDoctor.subspecialty && (
-                        <span className="block mt-2 text-brand-magenta font-medium">
+                        <span className="block mt-2 text-brand-magenta font-medium text-sm">
                           {selectedDoctor.subspecialty}
                         </span>
                       )}
-                    </DialogDescription>
+                    </div>
                   </div>
                 </div>
               </DialogHeader>
