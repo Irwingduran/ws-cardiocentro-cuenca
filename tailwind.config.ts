@@ -13,6 +13,15 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+  			// Colores del logo CardioCentro Cuenca
+  			brand: {
+  				purple: '#4A1B5C',
+  				'purple-dark': '#3A1549',
+  				'purple-light': '#5A2B6C',
+  				magenta: '#E91E7A',
+  				'magenta-dark': '#C91A68',
+  				'magenta-light': '#F93E8F',
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
