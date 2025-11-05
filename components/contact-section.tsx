@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { MapPin, Phone, Mail, Clock, Calendar, MessageCircle, Heart, Shield } from "lucide-react"
+import { LocationMap } from "@/components/location-map"
 
 export function ContactSection() {
   const contactInfo = [
@@ -183,6 +184,11 @@ export function ContactSection() {
               </CardContent>
             </Card>
           </div>
+        </div>
+
+        {/* Location Map */}
+        <div className="mt-16">
+          <LocationMap />
         </div>
 
       </div>
