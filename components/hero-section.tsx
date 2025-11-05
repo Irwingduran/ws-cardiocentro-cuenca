@@ -16,9 +16,10 @@ export function HeroSection() {
                   Corazón
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                Centro médico altamente especializado en cardiología con más de 10 años de experiencia. Ofrecemos
-                medicina personalizada y prevención cardiovascular.
+              <p className="text-xl text-gray-600 leading-relaxed text-justify">
+                Centro médico altamente especializado en el cuidado integral del corazón. Nuestro enfoque se basa en la
+                excelencia clínica, la medicina personalizada y la prevención. Contamos con especialistas en cardiología
+                clínica, electrofisiología, cirugía cardiovascular, y un equipo complementario multidisciplinario.
               </p>
             </div>
 
@@ -26,11 +27,16 @@ export function HeroSection() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+                asChild
               >
-                Agendar Consulta
+                <a href="https://wa.me/593989898747?text=Hola,%20me%20gustaría%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer">
+                  Agendar Consulta
+                </a>
               </Button>
-              <Button size="lg" variant="outline">
-                Conocer Servicios
+              <Button size="lg" variant="outline" asChild>
+                <a href="#servicios">
+                  Conocer Servicios
+                </a>
               </Button>
             </div>
 

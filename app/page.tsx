@@ -4,9 +4,11 @@ import { AboutSection } from "@/components/about-section"
 import { ServicesSection } from "@/components/services-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { ArticlesSection } from "@/components/articles-section"
+import { EducationSection } from "@/components/education-section"
 import { FAQSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { WhatsAppFloatButton } from "@/components/whatsapp-float-button"
 
 export default function HomePage() {
   return (
@@ -18,10 +20,12 @@ export default function HomePage() {
         <ServicesSection />
         <TestimonialsSection />
         <ArticlesSection />
+        <EducationSection />
         <FAQSection />
         <ContactSection />
       </main>
       <Footer />
+      <WhatsAppFloatButton />
     </div>
   )
 }

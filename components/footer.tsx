@@ -1,7 +1,12 @@
+"use client"
+
 import { Heart, MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react"
 import Link from "next/link"
+import { useState } from "react"
+import { LegalModal } from "@/components/legal-modals"
 
 export function Footer() {
+  const [modalOpen, setModalOpen] = useState<"privacy" | "terms" | null>(null)
   const quickLinks = [
     { name: "Inicio", href: "#inicio" },
     { name: "Servicios", href: "#servicios" },
@@ -39,6 +44,10 @@ export function Footer() {
               Centro médico altamente especializado en el cuidado integral del corazón con más de 10 años de experiencia
               en medicina cardiovascular.
             </p>
+            <div className="text-gray-400 text-sm space-y-1 mb-4">
+              <p className="font-semibold text-gray-300">CORPCARDIOCUENCA S.A.S</p>
+              <p>RUC: 0195156001001</p>
+            </div>
             <div className="flex space-x-4">
               <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-colors duration-200">
                 <Facebook className="h-4 w-4" />
@@ -87,22 +96,24 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-gray-400" />
                 <div>
-                  <p className="text-gray-400 text-sm">Av. Principal 123</p>
+                  <p className="text-gray-400 text-sm">Gonzalo Cordero s/n César Dávila Andrade</p>
                   <p className="text-gray-400 text-sm">Cuenca, Ecuador</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-gray-400" />
                 <div>
-                  <p className="text-gray-400 text-sm">+593 7 XXX-XXXX</p>
-                  <p className="text-gray-400 text-sm">+593 9XX-XXX-XXX</p>
+                  <a href="tel:+593989898747" className="text-gray-400 text-sm hover:text-white transition-colors">
+                    0989898747
+                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-gray-400" />
                 <div>
-                  <p className="text-gray-400 text-sm">info@cardiocentrocuenca.com</p>
-                  <p className="text-gray-400 text-sm">citas@cardiocentrocuenca.com</p>
+                  <a href="mailto:cardiocentro.cue@outlook.es" className="text-gray-400 text-sm hover:text-white transition-colors">
+                    cardiocentro.cue@outlook.es
+                  </a>
                 </div>
               </div>
             </div>
@@ -128,19 +139,31 @@ export function Footer() {
               © {new Date().getFullYear()} CardioCentro Cuenca. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+              <button
+                onClick={() => setModalOpen("terms")}
+                className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+              >
                 Términos y Condiciones
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+              </button>
+              <button
+                onClick={() => setModalOpen("privacy")}
+                className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+              >
                 Política de Privacidad
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                Aviso Legal
-              </Link>
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Legal Modals */}
+      {modalOpen && (
+        <LegalModal
+          isOpen={modalOpen !== null}
+          onClose={() => setModalOpen(null)}
+          type={modalOpen}
+        />
+      )}
     </footer>
   )
 }

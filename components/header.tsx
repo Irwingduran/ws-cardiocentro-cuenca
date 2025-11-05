@@ -15,7 +15,7 @@ export function Header() {
     { name: "Servicios", href: "#servicios" },
     { name: "Testimonios", href: "#testimonios" },
     { name: "Artículos", href: "#articulos" },
-    { name: "Preguntas Frecuentes", href: "#faq" },
+    { name: "Educación Continua", href: "#educacion" },
     { name: "Contacto", href: "#contacto" },
   ]
 
@@ -49,8 +49,11 @@ export function Header() {
             <Button
               className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white"
               size="sm"
+              asChild
             >
-              Agendar Cita
+              <a href="https://wa.me/593989898747?text=Hola,%20me%20gustaría%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer">
+                Agendar Cita
+              </a>
             </Button>
           </nav>
 
@@ -77,9 +80,11 @@ export function Header() {
               <Button
                 className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white mt-4"
                 size="sm"
-                onClick={() => setIsMenuOpen(false)}
+                asChild
               >
-                Agendar Cita
+                <a href="https://wa.me/593989898747?text=Hola,%20me%20gustaría%20agendar%20una%20consulta" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+                  Agendar Cita
+                </a>
               </Button>
             </nav>
           </div>

@@ -10,19 +10,19 @@ export function ContactSection() {
     {
       icon: MapPin,
       title: "Ubicación",
-      details: ["Av. Principal 123", "Cuenca, Ecuador"],
+      details: ["Gonzalo Cordero s/n César Dávila Andrade", "Cuenca, Ecuador"],
       color: "bg-red-100 text-red-600",
     },
     {
       icon: Phone,
       title: "Teléfono",
-      details: ["+593 7 XXX-XXXX", "+593 9XX-XXX-XXX"],
+      details: ["0989898747"],
       color: "bg-green-100 text-green-600",
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@cardiocentrocuenca.com", "citas@cardiocentrocuenca.com"],
+      details: ["cardiocentro.cue@outlook.es"],
       color: "bg-blue-100 text-blue-600",
     },
     {
@@ -62,7 +62,7 @@ export function ContactSection() {
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-indigo-100 text-indigo-800 hover:bg-indigo-100">Contáctanos</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Estamos Aquí para Ayudarte</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-justify">
             Tu salud cardiovascular es nuestra prioridad. Contáctanos para agendar tu consulta o resolver cualquier duda
             sobre nuestros servicios especializados.
           </p>
@@ -74,7 +74,7 @@ export function ContactSection() {
             <Card className="shadow-xl">
               <CardHeader>
                 <CardTitle className="text-2xl text-gray-900">Solicita tu Consulta</CardTitle>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-justify">
                   Completa el formulario y nos pondremos en contacto contigo a la brevedad
                 </p>
               </CardHeader>
@@ -185,27 +185,6 @@ export function ContactSection() {
           </div>
         </div>
 
-        {/* Privacy Notice */}
-        <div className="bg-white rounded-2xl p-8 shadow-lg">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Aviso de Privacidad</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                En CardioCentro Cuenca garantizamos la privacidad de la información médica y personal de nuestros
-                pacientes. Los datos son tratados de manera confidencial y utilizados únicamente con fines clínicos y
-                administrativos, conforme a la normativa ecuatoriana de protección de datos personales.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Términos y Condiciones</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Este sitio web es informativo y no reemplaza una consulta médica presencial. CardioCentro Cuenca se
-                reserva el derecho de modificar contenidos, servicios o precios sin previo aviso. Para atención
-                personalizada, comuníquese directamente con nuestro equipo.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

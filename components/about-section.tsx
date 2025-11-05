@@ -7,30 +7,32 @@ export function AboutSection() {
     {
       icon: Users,
       title: "Miles de Pacientes",
-      description: "Atención a miles de pacientes con enfermedades cardíacas y metabólicas complejas",
+      description: "Atención a miles de pacientes con enfermedades cardíacas y metabólicas complejas durante más de 10 años",
     },
     {
       icon: Award,
-      title: "Certificaciones",
-      description: "Títulos registrados ante SENESCYT y validados por el Ministerio de Salud Pública",
+      title: "Certificaciones Oficiales",
+      description: "Títulos universitarios y especializaciones registrados ante SENESCYT y validados por el Ministerio de Salud Pública del Ecuador",
     },
     {
       icon: Heart,
-      title: "Especialización",
-      description: "Experiencia destacada en diagnóstico de arritmias y seguimiento de marcapasos",
+      title: "Especialización Destacada",
+      description: "Experiencia destacada en el diagnóstico de arritmias, implante y seguimiento de marcapasos",
     },
     {
       icon: Globe,
       title: "Reconocimiento Internacional",
-      description: "Afiliación a sociedades científicas nacionales e internacionales",
+      description: "Participación en congresos científicos y afiliación activa a sociedades científicas nacionales e internacionales",
     },
   ]
 
   const certifications = [
+    "SENESCYT - Secretaría de Educación Superior, Ciencia, Tecnología e Innovación",
+    "Ministerio de Salud Pública del Ecuador",
+    "ACESS - Agencia de Aseguramiento de la Calidad de los Servicios de Salud y Medicina Prepagada",
     "Sociedad Ecuatoriana de Electrofisiología y Estimulación Cardíaca (SEDEC)",
     "Sociedad Mexicana de Electrofisiología y Estimulación Cardíaca (SOMEEC)",
     "Latin American Heart Rhythm Society (LAHRS)",
-    "Registro sanitario vigente ante ACESS",
   ]
 
   return (
@@ -39,9 +41,9 @@ export function AboutSection() {
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">Más de 10 años de experiencia</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Experiencia y Certificaciones</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-justify">
             Nuestro equipo multidisciplinario cuenta con formación nacional e internacional, reconocido por la calidad
-            humana y el enfoque ético centrado en el paciente.
+            humana, el enfoque ético y la atención centrada en el paciente.
           </p>
         </div>
 
@@ -53,14 +55,14 @@ export function AboutSection() {
                   <achievement.icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{achievement.title}</h3>
-                <p className="text-gray-600 text-sm">{achievement.description}</p>
+                <p className="text-gray-600 text-sm text-justify">{achievement.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Afiliaciones Científicas</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Certificaciones y Afiliaciones</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {certifications.map((cert, index) => (
               <div key={index} className="flex items-center space-x-3">

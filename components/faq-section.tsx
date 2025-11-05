@@ -35,7 +35,7 @@ export function FAQSection() {
       color: "bg-green-100 text-green-800",
       question: "¿Cuáles son los costos de los servicios?",
       answer:
-        "Nuestros precios se adaptan a convenios con aseguradoras, empresas y programas institucionales. Contamos con un área de trabajo social que evalúa casos de pacientes con recursos limitados para facilitar el acceso a medicina solidaria. Contáctanos para información específica sobre tarifas.",
+        "En CardioCentro Cuenca comprendemos la importancia de garantizar el acceso a la salud cardiovascular con calidad y sensibilidad social. Nuestros precios se adaptan a convenios con aseguradoras, empresas y programas institucionales. Contamos con un área de trabajo social que evalúa casos clínicos de pacientes con recursos limitados, facilitando el acceso a medicina solidaria como parte fundamental de nuestra misión. Para conocer las tarifas de cada servicio, contáctanos directamente.",
     },
     {
       category: "Seguros",
@@ -43,7 +43,7 @@ export function FAQSection() {
       color: "bg-purple-100 text-purple-800",
       question: "¿Aceptan seguros médicos?",
       answer:
-        "Sí, trabajamos con diversas aseguradoras y tenemos convenios institucionales. También ofrecemos opciones flexibles de pago y programas de medicina solidaria para garantizar el acceso a la salud cardiovascular de calidad.",
+        "Sí, trabajamos con diversas aseguradoras y tenemos convenios institucionales. También ofrecemos opciones flexibles de pago y programas de medicina solidaria para garantizar el acceso a la salud cardiovascular de calidad. Se ofrecen opciones flexibles y asesoría para que más personas puedan acceder a atención médica especializada sin barreras.",
     },
     {
       category: "Servicios",
@@ -51,7 +51,7 @@ export function FAQSection() {
       color: "bg-red-100 text-red-800",
       question: "¿Realizan cirugías cardiovasculares?",
       answer:
-        "Contamos con especialistas en cirugía cardiovascular como parte de nuestro equipo multidisciplinario. Los procedimientos quirúrgicos se realizan en clínicas aliadas bajo la supervisión de nuestro equipo especializado, garantizando la continuidad del cuidado.",
+        "Contamos con especialistas en cirugía cardiovascular como parte de nuestro equipo multidisciplinario. Los procedimientos como el implante de marcapasos se realizan en una clínica aliada bajo supervisión de nuestro equipo especializado, garantizando la continuidad del cuidado y seguimiento del paciente.",
     },
     {
       category: "Citas",
@@ -67,7 +67,7 @@ export function FAQSection() {
       color: "bg-red-100 text-red-800",
       question: "¿Qué es la electrofisiología cardiaca?",
       answer:
-        "La electrofisiología cardiaca es la especialidad que se encarga del diagnóstico y tratamiento de las arritmias (alteraciones del ritmo cardíaco). Incluye estudios no invasivos, implante de marcapasos, y seguimiento de dispositivos cardíacos.",
+        "La electrofisiología cardiaca es la especialidad que se encarga del diagnóstico y tratamiento de las arritmias (alteraciones del ritmo cardíaco) como taquicardias, fibrilación auricular, bloqueos y síncope. Incluye implante y seguimiento clínico de marcapasos, ajustes de dispositivos y estudios de electrofisiología no invasivos.",
     },
     {
       category: "Citas",
@@ -101,7 +101,7 @@ export function FAQSection() {
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-yellow-100 text-yellow-800 hover:bg-yellow-100">Preguntas Frecuentes</Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Resolvemos tus Dudas</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-justify">
             Encuentra respuestas a las preguntas más comunes sobre nuestros servicios, procesos y atención médica
             especializada en cardiología.
           </p>
@@ -141,7 +141,7 @@ export function FAQSection() {
                   {openItems.includes(index) && (
                     <div className="px-6 pb-6">
                       <div className="pl-16">
-                        <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                        <p className="text-gray-600 leading-relaxed text-justify">{faq.answer}</p>
                       </div>
                     </div>
                   )}
@@ -153,7 +153,7 @@ export function FAQSection() {
 
         <div className="mt-16 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">¿No encontraste tu respuesta?</h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto text-justify">
             Nuestro equipo está disponible para resolver cualquier duda adicional que tengas sobre nuestros servicios o
             tu condición médica específica.
           </p>
@@ -165,7 +165,7 @@ export function FAQSection() {
               Contactar Ahora
             </a>
             <a
-              href="tel:+593-xxx-xxxx"
+              href="tel:+593989898747"
               className="inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200"
             >
               Llamar Directamente
