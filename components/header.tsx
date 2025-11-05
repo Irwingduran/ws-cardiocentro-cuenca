@@ -12,6 +12,7 @@ export function Header() {
   const navItems = [
     { name: "Inicio", href: "#inicio" },
     { name: "Experiencia", href: "#experiencia" },
+    { name: "Equipo Médico", href: "#equipo" },
     { name: "Servicios", href: "#servicios" },
     { name: "Testimonios", href: "#testimonios" },
     { name: "Artículos", href: "#articulos" },
@@ -22,15 +23,15 @@ export function Header() {
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 md:h-20">
           <div className="flex items-center space-x-2">
             <div className="p-1 rounded-lg">
-              <Image 
-                src="/logo.png" 
-                alt="CardioCentro Cuenca Logo" 
-                width={400} 
-                height={200} 
-                className="h-20 w-35 object-contain"
+              <Image
+                src="/logo.png"
+                alt="CardioCentro Cuenca Logo"
+                width={400}
+                height={200}
+                className="h-12 w-auto object-contain md:h-16 lg:h-20"
               />
             </div>
           </div>
