@@ -37,6 +37,7 @@ export function DoctorsSection() {
       name: "Dra. Daysi Durán",
       specialty: "Endocrinología",
       subspecialty: "Implantación de Marcapasos y Ablación de Arritmias",
+      image: "/doc/daisy-duran.jpeg",
       biography: "La Dra. Daysi Durán se graduó como medico general en la Universidad de Cuenca. Posteriormente completó su especialidad en Endocrinología en el Hospital Hermanos Amejeiras que es el centro de referencia a nivel nacional para el manejo de casos complejos en la Habana - Cuba.",
       certifications: "Sociedad Argentina de Lipidos. Manejo Interdisciplinario de la Obesidad por la Universidad de los Andes - Colombia y Novonordisk. Manejo integral de la obesidad por la Casa de la Diabetes núcleo Cuenca y el MSP del Ecuador. Curso de ecografia y procedimientos de tiroides y paratiroides por la universidad de los Andes - Colombia.",
       experience: "Con más de 10 años de experiencia en el diagnóstico y tratamiento de enfermedades metabólicas.",
@@ -53,6 +54,7 @@ export function DoctorsSection() {
     {
       name: "Dra. Jessica Coronel Zárate",
       specialty: "Cardiología Pediátrica",
+      image: "/doc/jessica-coronel.jpeg",
       biography: "La Dra Jessica Coronel se médica que graduó en la Universidad de Cuenca, con especialidad en Pediatría en la Universidad de Cuenca, Hospital Vicente Corral Moscoso, con subespecialidad en Cardiología Pediátrica y alta especialidad en Ecocardiografía en el Instituto Nacional de Cardiología Ignacio Chávez en la ciudad de México con aval de la Universidad Autónoma de México (UNAM), encargado de la salud cardiovascular de los niños.",
       certifications: "Título de Especialista en Pediatría. Título de Subespecialista en Cardiología Pediátrica. Título de Alta especialidad en Ecocardiografía. Miembro activo de la Sociedad Ecuatoriana de Cardiología.",
       experience: "Con mas de 5 años de experiencia en el área pediátrica y 3 años en la rama de cardiología pediátrica.",
@@ -61,6 +63,7 @@ export function DoctorsSection() {
     {
       name: "Dra. Kimberly Loayza Pelaez",
       specialty: "Nefrología",
+      image: "/doc/kimberly-loaiza.jpeg",
       biography: "La Dra. Kimberly Loayza Pelaez es una médica nefrologa clinica. Se graduó de Medica en la Universidad de Cuenca en el 2014 y posteriormente realizo su especialidad en Medicina Interna en la Sociedad Argentina de Medicina Interna de Buenos Aires (SMIBA), realizando su subespecialidad en Nefrologia y medio interno en la Universidad de Buenos Aires (UBA) y sus practicas hospitalarias en el Hospital de Clinicas Jose de San Martin, con una maestria en Cuidados Paliativos en la Universidad del Salvador de Argentina.",
       certifications: "Es miembro activo de las sociedades profesionales: Sociedad Argentina de Nefrologia, Sociedad Ecuatoriana de Nefrologia",
       experience: "Con más de 5 años de experiencia en la prevención, diagnóstico y tratamiento de enfermedades cronicas, principalmente renales.",
@@ -69,6 +72,7 @@ export function DoctorsSection() {
     {
       name: "Dra. Johanna García Tapia",
       specialty: "Neumología",
+      image: "/doc/johanna-garcia.jpeg",
       biography: "La Dra. Johanna Verónica García Tapia es médica especialista en Neumología. Se graduó en Medicina en la Universidad de Cuenca (Ecuador) y obtuvo el título de especialista en Neumología avalado por el Ministerio de Salud de Argentina. Realizó prácticas hospitalarias en el Hospital Nacional Alejandro Posadas, centro de alta complejidad en Argentina.",
       certifications: "Título de Especialista en Neumología – Ministerio de Salud de Argentina. Perfeccionamiento en Medicina del Sueño. Actualización en Rehabilitación Respiratoria. Actualización en Hipertensión Pulmonar. Miembro activo de la Asociación Argentina de Medicina Respiratoria.",
       experience: "Especialista en Neumología con experiencia en Argentina y Ecuador.",
@@ -143,9 +147,20 @@ export function DoctorsSection() {
             >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="bg-brand-purple/10 p-3 rounded-full flex-shrink-0">
-                    <User className="h-6 w-6 text-brand-purple" />
-                  </div>
+                  {doctor.image ? (
+                    <div className="relative w-16 h-16 flex-shrink-0">
+                      <Image
+                        src={doctor.image}
+                        alt={doctor.name}
+                        fill
+                        className="rounded-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="bg-brand-purple/10 p-3 rounded-full flex-shrink-0">
+                      <User className="h-6 w-6 text-brand-purple" />
+                    </div>
+                  )}
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 text-lg mb-2">{doctor.name}</h3>
                     <Badge className={specialtyColors[doctor.specialty] || "bg-gray-100 text-gray-800"}>
@@ -180,9 +195,20 @@ export function DoctorsSection() {
             <>
               <DialogHeader>
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="bg-brand-purple/10 p-4 rounded-full">
-                    <User className="h-8 w-8 text-brand-purple" />
-                  </div>
+                  {selectedDoctor.image ? (
+                    <div className="relative w-20 h-20 flex-shrink-0">
+                      <Image
+                        src={selectedDoctor.image}
+                        alt={selectedDoctor.name}
+                        fill
+                        className="rounded-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="bg-brand-purple/10 p-4 rounded-full">
+                      <User className="h-8 w-8 text-brand-purple" />
+                    </div>
+                  )}
                   <div>
                     <DialogTitle className="text-2xl">{selectedDoctor.name}</DialogTitle>
                     <div className="mt-2">
