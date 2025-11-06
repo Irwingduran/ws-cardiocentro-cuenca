@@ -71,7 +71,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative z-10">
               <Image
-                src="/placeholder.svg?height=600&width=500"
+                src="/img/39.png"
                 alt="CardioCentro Cuenca - Equipo médico especializado"
                 width={500}
                 height={600}
